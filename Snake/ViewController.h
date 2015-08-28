@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CanvasView.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<CanvasViewDataSource>
 
+@property (weak, nonatomic) IBOutlet CanvasView *canvas;
 
+- (IBAction)didClickStartButton:(id)sender;
 @end
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CC6E17D1B90028E00D18476 /* Fruit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6E17C1B90028E00D18476 /* Fruit.m */; };
+		4CC6E1801B90058E00D18476 /* NSMutableArray+StackAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6E17F1B90058E00D18476 /* NSMutableArray+StackAddition.m */; };
 		4CC9A3381B8EE8D100E84F60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9A3371B8EE8D100E84F60 /* main.m */; };
 		4CC9A33B1B8EE8D100E84F60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9A33A1B8EE8D100E84F60 /* AppDelegate.m */; };
 		4CC9A33E1B8EE8D100E84F60 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9A33D1B8EE8D100E84F60 /* ViewController.m */; };
@@ -14,6 +16,10 @@
 		4CC9A3431B8EE8D100E84F60 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CC9A3421B8EE8D100E84F60 /* Images.xcassets */; };
 		4CC9A3461B8EE8D100E84F60 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC9A3441B8EE8D100E84F60 /* LaunchScreen.xib */; };
 		4CC9A3521B8EE8D100E84F60 /* SnakeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9A3511B8EE8D100E84F60 /* SnakeTests.m */; };
+		4CC9A35D1B8EE99B00E84F60 /* Snake.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9A35C1B8EE99B00E84F60 /* Snake.m */; };
+		4CC9A3601B8EEA0000E84F60 /* NSMutableArray+QueueAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9A35F1B8EEA0000E84F60 /* NSMutableArray+QueueAdditions.m */; };
+		4CC9A3641B8EFDCF00E84F60 /* IntegerPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9A3631B8EFDCF00E84F60 /* IntegerPoint.m */; };
+		4CC9A3671B8F133000E84F60 /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9A3661B8F133000E84F60 /* CanvasView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4CC6E17B1B90028E00D18476 /* Fruit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fruit.h; sourceTree = "<group>"; };
+		4CC6E17C1B90028E00D18476 /* Fruit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fruit.m; sourceTree = "<group>"; };
+		4CC6E17E1B90058E00D18476 /* NSMutableArray+StackAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+StackAddition.h"; sourceTree = "<group>"; };
+		4CC6E17F1B90058E00D18476 /* NSMutableArray+StackAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+StackAddition.m"; sourceTree = "<group>"; };
 		4CC9A3321B8EE8D100E84F60 /* Snake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC9A3361B8EE8D100E84F60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CC9A3371B8EE8D100E84F60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +50,14 @@
 		4CC9A34B1B8EE8D100E84F60 /* SnakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC9A3501B8EE8D100E84F60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CC9A3511B8EE8D100E84F60 /* SnakeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnakeTests.m; sourceTree = "<group>"; };
+		4CC9A35B1B8EE99B00E84F60 /* Snake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Snake.h; sourceTree = "<group>"; };
+		4CC9A35C1B8EE99B00E84F60 /* Snake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Snake.m; sourceTree = "<group>"; };
+		4CC9A35E1B8EEA0000E84F60 /* NSMutableArray+QueueAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+QueueAdditions.h"; sourceTree = "<group>"; };
+		4CC9A35F1B8EEA0000E84F60 /* NSMutableArray+QueueAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+QueueAdditions.m"; sourceTree = "<group>"; };
+		4CC9A3621B8EFC5C00E84F60 /* IntegerPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntegerPoint.h; sourceTree = "<group>"; };
+		4CC9A3631B8EFDCF00E84F60 /* IntegerPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntegerPoint.m; sourceTree = "<group>"; };
+		4CC9A3651B8F133000E84F60 /* CanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
+		4CC9A3661B8F133000E84F60 /* CanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +78,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4CC6E1811B900F4700D18476 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4CC9A35E1B8EEA0000E84F60 /* NSMutableArray+QueueAdditions.h */,
+				4CC9A35F1B8EEA0000E84F60 /* NSMutableArray+QueueAdditions.m */,
+				4CC6E17E1B90058E00D18476 /* NSMutableArray+StackAddition.h */,
+				4CC6E17F1B90058E00D18476 /* NSMutableArray+StackAddition.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		4CC6E1821B900F6B00D18476 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4CC9A3651B8F133000E84F60 /* CanvasView.h */,
+				4CC9A3661B8F133000E84F60 /* CanvasView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		4CC9A3291B8EE8D100E84F60 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,9 @@
 		4CC9A3341B8EE8D100E84F60 /* Snake */ = {
 			isa = PBXGroup;
 			children = (
+				4CC6E1821B900F6B00D18476 /* Views */,
+				4CC6E1811B900F4700D18476 /* Categories */,
+				4CC9A3611B8EEA2A00E84F60 /* DTO */,
 				4CC9A3391B8EE8D100E84F60 /* AppDelegate.h */,
 				4CC9A33A1B8EE8D100E84F60 /* AppDelegate.m */,
 				4CC9A33C1B8EE8D100E84F60 /* ViewController.h */,
@@ -117,6 +158,19 @@
 				4CC9A3501B8EE8D100E84F60 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CC9A3611B8EEA2A00E84F60 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				4CC9A35B1B8EE99B00E84F60 /* Snake.h */,
+				4CC9A35C1B8EE99B00E84F60 /* Snake.m */,
+				4CC9A3621B8EFC5C00E84F60 /* IntegerPoint.h */,
+				4CC9A3631B8EFDCF00E84F60 /* IntegerPoint.m */,
+				4CC6E17B1B90028E00D18476 /* Fruit.h */,
+				4CC6E17C1B90028E00D18476 /* Fruit.m */,
+			);
+			name = DTO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +273,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CC9A35D1B8EE99B00E84F60 /* Snake.m in Sources */,
+				4CC9A3601B8EEA0000E84F60 /* NSMutableArray+QueueAdditions.m in Sources */,
 				4CC9A33E1B8EE8D100E84F60 /* ViewController.m in Sources */,
 				4CC9A33B1B8EE8D100E84F60 /* AppDelegate.m in Sources */,
+				4CC6E17D1B90028E00D18476 /* Fruit.m in Sources */,
+				4CC9A3671B8F133000E84F60 /* CanvasView.m in Sources */,
+				4CC6E1801B90058E00D18476 /* NSMutableArray+StackAddition.m in Sources */,
 				4CC9A3381B8EE8D100E84F60 /* main.m in Sources */,
+				4CC9A3641B8EFDCF00E84F60 /* IntegerPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +476,7 @@
 				4CC9A3571B8EE8D100E84F60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CC9A3581B8EE8D100E84F60 /* Build configuration list for PBXNativeTarget "SnakeTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +485,7 @@
 				4CC9A35A1B8EE8D100E84F60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
