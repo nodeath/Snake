@@ -161,6 +161,10 @@
 
 - (void)grow {
     [self.body insertObject:[self.trace pop] atIndex:0];
+    [self.body insertObject:[self.trace pop] atIndex:0];
+    [self.body insertObject:[self.trace pop] atIndex:0];
+    [self.body insertObject:[self.trace pop] atIndex:0];
+    [self.body insertObject:[self.trace pop] atIndex:0];
 }
 
 - (IntegerPoint *)head {

@@ -7,6 +7,7 @@
 //
 
 #import "CanvasView.h"
+#import "Fruit.h"
 
 static CGFloat BlockSize = 5.0f;
 
@@ -28,20 +29,30 @@ static CGFloat BlockSize = 5.0f;
         boundryPath.lineWidth = BlockSize;
         
         [boundryPath stroke];
-        CGContextRef context = UIGraphicsGetCurrentContext();
-        CGContextSetStrokeColorWithColor(context, [UIColor redColor].CGColor);
-        
         UIBezierPath *path = [UIBezierPath bezierPath];
         [path setLineWidth:BlockSize];
         [path moveToPoint:CGPointMake([snake tail].x*BlockSize + startPoint.x, [snake tail].y*BlockSize + startPoint.y)];
         
         [[snake body] enumerateObjectsUsingBlock:^(IntegerPoint *point, NSUInteger idx, BOOL *stop) {
             if(idx > 0){
-                [path addLineToPoint:CGPointMake(point.x*BlockSize + startPoint.x, point.y*BlockSize + startPoint.y)];
+                //[path addLineToPoint:CGPointMake(point.x*BlockSize + startPoint.x, point.y*BlockSize + startPoint.y)];
+                UIBezierPath *pointPath = [UIBezierPath bezierPathWithRect:CGRectMake(point.x*BlockSize, point.y*BlockSize, BlockSize, BlockSize)];
+                [[UIColor blueColor] setFill];
+                [pointPath fill];
             }
         }];
         
         [path stroke];
+    }
+    
+    NSArray *fruits = [self.dataSource fruits];
+    if(self.dataSource && fruits){
+        [fruits enumerateObjectsUsingBlock:^(Fruit *fruit, NSUInteger idx, BOOL *stop) {
+            UIBezierPath *fruitPoint = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(fruit.position.x*BlockSize, fruit.position.y*BlockSize, BlockSize, BlockSize)];
+            [[UIColor redColor] setFill];
+
+            [fruitPoint fill];
+        }];
     }
 }
 

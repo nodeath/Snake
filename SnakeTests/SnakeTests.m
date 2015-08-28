@@ -93,7 +93,20 @@
     [self.snake move];
     
     XCTAssertEqualObjects(self.snake.trace[0], initialTailPosition, @"initial position should be in trace");
+}
+
+- (void)testGrow {
     
+    NSInteger originalLength = [self.snake.body count];
+    [self.snake move];
+    [self.snake move];
+    [self.snake move];
+    [self.snake move];
+    [self.snake move];
+    
+    [self.snake grow];
+    
+    XCTAssert([self.snake.body count] > originalLength, @"grow should extend snake");
 }
 
 @end

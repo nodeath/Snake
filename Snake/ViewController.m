@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Snake.h"
 #import "IntegerPoint.h"
+#import "Fruit.h"
 
 @interface ViewController ()
 
@@ -47,6 +48,8 @@
     
     
     self.snake.boundry = [IntegerPoint pointWithX:50 Y:50];
+    
+    self.fruits = [NSMutableArray arrayWithArray:@[[Fruit fruitWithPosition:[IntegerPoint pointWithX:30 Y:30]]]];
 }
 
 - (void)setupRecognizers {
@@ -97,12 +100,31 @@
 
 - (void)refreshCanvas{
     if(![self.snake move]){
+        [self.timer invalidate];
+        
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Game Over!" message:nil preferredStyle:UIAlertControllerStyleAlert];
         [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
         [self presentViewController:alert animated:YES completion:nil];
-        
-        [self.timer invalidate];
     } else {
+        __block Fruit *fruitToEat = nil;
+        [self.fruits enumerateObjectsUsingBlock:^(Fruit *fruit, NSUInteger idx, BOOL *stop) {
+            if([fruit.position isEqual:self.snake.head]){
+                fruitToEat = fruit;
+            }
+        }];
+        
+        if(fruitToEat){
+            [self.fruits removeObject:fruitToEat];
+            IntegerPoint *randomPoint = nil;
+            do {
+                randomPoint = [IntegerPoint pointWithX:(arc4random_uniform(48) + 1) Y:(arc4random_uniform(48) + 1)];
+            } while (randomPoint == nil || [self.snake.body containsObject:randomPoint]);
+            
+            [self.fruits addObject:[Fruit fruitWithPosition:randomPoint]];
+            
+            [self.snake grow];
+        }
+        
         [self.canvas setNeedsDisplay];
     }
 }
